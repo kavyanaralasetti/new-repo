@@ -1,0 +1,44 @@
+ After ubuntu ip connected:
+
+
+Apache installation:8l
+New User Process:
+sudo apt update
+sudo apt install apache2 (Atomatic ga apache server connect iyi untadi)
+apache2 -version ( Apache2 Version check)
+
+Existing User:
+sudo service apache2 stop ( Stop apache sever)
+sudo systemctl start apache2 (start apache server)
+
+
+
+Install PHP8.2:
+New User:
+sudo apt-get install software-properties-common
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt install php8.2
+sudo apt-get install -y php8.2-cli php8.2-common php8.2-fpm php8.2-mysql php8.2-zip php8.2-gd php8.2-mbstring php8.2-curl php8.2-xml php8.2-bcmath
+apt list -a php8.2-*
+
+Installing MySql
+New user:
+sudo apt install mysql-server
+sudo systemctl start mysql.service ( to start the server)
+sudo service mysql stop ( Stop sql sever)
+sudo mysql_secure_installation ( follow some steps to verify link)
+sudo mysql;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; ( For changing Password)
+Ctrl+z we need to back unbuntu
+
+Existing User:
+sudo systemctl start mysql.service ( to start the server)
+sudo service mysql stop ( Stop sql sever)
+
+
+newuser:
+sudo apt install phpmyadmin ( follow some steps)
+
+
+How to lauch the admin account:
+Pubilc ip/phpmyadmin

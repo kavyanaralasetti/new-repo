@@ -1,0 +1,107 @@
+php bin/magento setup:install --base-url="http://twai.magento.com/" --db-host="localhost" --db-name="magento2" --db-user="root" --db-password="Pass@123" --admin-firstname="admin" --admin-lastname="admin" --admin-email="sekharr52@gmail.com" --admin-user="admin" --admin-password="Admin@123456" --language="en_US" --currency="USD" --timezone="America/Chicago" --use-rewrites="1" --backend-frontname="admin" --search-engine=elasticsearch7 --elasticsearch-host="localhost" --elasticsearch-port=9200
+
+
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Evomania@123';
+CREATE DATABASE dev-evomania;
+add-apt-repository ppa:ondrej/php
+apt install php8.2 -y
+
+sudo apt install php8.2-bcmath php8.2-intl php8.2-soap php8.2-zip php8.2-gd php8.2-curl php8.2-cli php8.2-xml php8.2-xmlrpc php8.2-gmp php8.2-common php8.2-mbstring php8.2-hash php8.2-openssl php8.2-pdo_mysql
+
+sudo composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.4.6 uat-evomania
+
+sudo apt install php8.2-bcmath php8.2-intl php8.2-soap php8.2-zip php8.2-gd php8.2-curl php8.2-cli php8.2-xml php8.2-xmlrpc php8.2-gmp php8.2-common
+
+
+sudo apt install php8.2-bcmath php8.2-intl php8.2-soap php8.2-zip php8.2-gd php8.2-curl php8.2-cli php8.2-xml php8.2-xmlrpc php8.2-gmp php8.2-common
+
+	
+sudo apt install phpmyadmin php8.2-curl php8.2-gd php8.2-mbstring php8.2-mcrypt php8.2-mysql
+  php8.2-opcache php8.2-phpdbg php8.2-readline php8.2-xml php8.2-zip
+  
+   php8.2-common php8.2-mysql
+  
+   sudo apt install php8.2-cli php8.2-common php8.2-mbstring php8.2-mcrypt php8.2-mysql php8.2-opcache php8.2-phpdbg php8.2-readline
+  
+  sudo apt install php8.2-bz2 php8.2-common php8.2-mysql phpmyadmin
+  
+ sudo apt install php8.2-bz2 php8.2-common
+  php8.2-mysql php8.2-xml php8.2-zip
+  
+ sudo apt install php8.2-common php8.2-mysql
+  php8.2-xml php8.2-zip
+
+ php8.2-mbstring 
+ php-zip php-gd php-json php-curl
+
+sudo phpenmod mbstring
+sudo phpenmod dom
+sudo phpenmod common
+sudo phpenmod cli
+
+ sudo apt install php8.2-soap	
+ php8.2-soap
+ php8.2-zip
+ php8.2-gd
+ php8.2-curl
+ php8.2-cli
+ php8.2-xml
+ php8.2-xmlrpc
+ php8.2-gmp
+ php8.2-common
+ 
+ sudo apt install php8.1-bcmath php8.1-intl php8.1-soap php8.1-zip php8.1-gd php8.1-curl php8.1-cli php8.1-xml php8.1-xmlrpc php8.1-gmp php8.1-common
+ 
+ 
+php bin/magento setup:install --base-url="http://uat-evomania.com/" --db-host=localhost --db-name=uat-evomania --db-user=root --db-password=Evomania@123 --admin-firstname=Admin --admin-lastname=Admin --admin-email=sekharr52@gmail.com --admin-user=admin --admin-password=Admin@123 --language=en_US --currency=USD --timezone=America/Chicago --backend-frontname=admin --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200
+ 
+ 
+ phpmyadmin php8.2-mbstring php8.2-zip php8.2-gd php8.2-json php8.2-curl
+
+ sudo apt install php8.2-common php8.2-curl php8.2-gd
+  php8.2-mysql php8.2-xml php8.2-zip phpmyadmin
+  sudo apt install php8.2-mysql
+  php8.2-xml php8.2-zip
+
+<VirtualHost *:80>
+    ServerAdmin admin@dev-evomania.com
+    ServerName dev-evomania.com
+    #ServerAlias www.test.com
+    DocumentRoot /var/www/html/dev-evomania
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/html/magento2/pub
+         ServerName sonal.magento.com
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+<Directory "/var/www/html">
+AllowOverride all
+</Directory>
+</VirtualHost>
+
+
+172.31.46.134  13.202.16.210
+
+172.31.46.130  3.111.236.146
+
+sudo a2dissite 000-default.conf
+sudo a2dissite uat-evomania.com.conf
+sudo a2ensite uat-evomania.com.conf
+
+
+
+ sudo apt install php8.2-bz2
+  php8.2-common php8.2-mysql php8.2-xml php8.2-zip phpmyadmin
+  
+  sudo apt install php8.2-common php8.2-curl php8.2-gd php8.2-mysql
+  
+    php8.2-common php8.2-unzip
+   
+   
+    sudo apt install php8.2-cli php8.2-common php8.2-mbstring php8.2-mcrypt php8.2-mysql php8.2-opcache php8.2-phpdbg php8.2-readline
